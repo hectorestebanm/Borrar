@@ -20,14 +20,14 @@
             </tr>
         </thead>
         <tbody>
-            <!-- {% for empleado in empleados %} -->
+            {% for empleado in empleados %}
                 <tr>
                     <td>{{empleado[0]}}</td>
                     <td>{{empleado[1]}}</td>
-                    <td>{{empleado[2]}}</td>
-                    <!-- <td><a class="btn btn-danger" href="/destroy/{{empleado[0]}}">Eliminar</a> || <a class="btn btn-primary" href="/edit/{{empleado[0]}}">Editar</a></td> -->
+                    <td>{{empleado[3]}}</td>
+                    <td><a class="btn btn-danger" href="/destroy/{{empleado[0]}}">Eliminar</a> || <a class="btn btn-primary" href="/edit/{{empleado[0]}}">Editar</a></td>
                 </tr>
-            <!-- {% endfor %} -->
+            {% endfor %}
         </tbody>
     </table>
 </body>

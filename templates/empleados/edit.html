@@ -9,18 +9,18 @@
 </head>
 <body>
     <h1>EDIT</h1>
-    <!-- {% for empleado in empleados %} -->
+    {% for empleado in empleados %}
         <form action="/update" method="post">
             ID:
-            <input type="text" name="txtID" id="txtID" value=""><br>
+            <input type="text" name="txtID" id="txtID" value="{{empleado[0]}}"><br>
             Nombre:
-            <input type="text" name="txtNombre" id="txtNombre" value=""><br>
+            <input type="text" name="txtNombre" id="txtNombre" value="{{empleado[1]}}"><br>
             Correo:
-            <input type="text" name="txtCorreo" id="txtCorreo" value=""><br><br>
+            <input type="text" name="txtCorreo" id="txtCorreo" value="{{empleado[3]}}"><br><br>
             <!-- Foto: -->
             <!-- <input type="file" name="txtFoto" id="txtFoto"><br><br> -->
             <input type="submit" value="Guardar">
         </form>
-    <!-- {% endfor %} -->
+    {% endfor %}
 </body>
 </html>
